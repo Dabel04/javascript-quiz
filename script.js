@@ -24,6 +24,32 @@ const questions = [
     choices: ["pop()", "shift()", "slice()", "splice()"],
     answer: 1,
   },
+  {
+    prompt: "Which method adds the last element from an array?",
+    choices: ["pop()", "shift()", "slice()", "splice()"],
+    answer: 2,
+  },
+  {
+    prompt: "Which array method removes an item from the end of an array?",
+    choices: ["shift()", "push()", "unshift()", "pop()"],
+    answer: 4,
+  },
+  {
+    prompt: "What does /n mean in JavaScript?",
+    choices: ["New Line", "Remainder", "Power", "Multiply"],
+    answer: 1,
+  },
+   {
+    prompt: "What does * mean in JavaScript?",
+    choices: ["New Line", "Remainder", "Power", "Multiply"],
+    answer: 4,
+  },
+  {
+    prompt: "What does mathsquare mean in JavaScript?",
+    choices: ["New Line", "Remainder", "Power", "Multiply"],
+    answer: 3,
+  },
+  
 ];
 
 let score = 0;
@@ -40,7 +66,7 @@ for (let i = 0; i < questions.length; i++) {
     questionText += (j + 1) + ". " + q.choices[j] + "\n";
   }
 
-  const userInput = prompt(questionText + "\nEnter your answer (1-4):");
+  const userInput = prompt(questionText);
   const answer = Number(userInput);
 
   if (answer === q.answer) {
