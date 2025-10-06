@@ -54,7 +54,7 @@ const questions = [
 
 let score = 0;
 
-alert(" Welcome to the JavaScript Quiz!");
+alert(" Welcome to Belchi's JavaScript Quiz!");
 
 // main quiz loop
 for (let i = 0; i < questions.length; i++) {
